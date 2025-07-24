@@ -4,8 +4,97 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Каталог десертов</title>
-  <link rel="stylesheet" href="https://github.com/VartuiLala/catalog/blob/00bb48452301c4ba448f87a3a171a1b0511e6245/style.css" />
+  <link rel="stylesheet" href="blob/00bb48452301c4ba448f87a3a171a1b0511e6245/style.css" />
 </head>
+  <style>body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #fef7f3; /* очень светлый персиковый */
+  color: #4a4a4a; /* темно-серый для текста */
+}
+
+header {
+  background: #f8e8e1; /* светлый коралловый */
+  padding: 24px 20px;
+  text-align: center;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.05);
+}
+
+nav a {
+  margin: 0 12px;
+  text-decoration: none;
+  color: #a87f72; /* приглушенный терракотовый */
+  font-weight: 600;
+  font-size: 1.05rem;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #7c5a4d; /* чуть темнее при наведении */
+}
+
+.dessert-list {
+  display: flex;
+  justify-content: center;
+  gap: 36px;
+  padding: 48px 20px;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.dessert-card {
+  width: 260px;
+  text-align: center;
+  border: 1px solid #f0d9d3; /* очень светлый розовато-бежевый */
+  border-radius: 14px;
+  padding: 24px 18px;
+  background: #fff8f6; /* почти белый с легким розоватым оттенком */
+  box-shadow: 0 2px 8px rgba(168,127,114,0.15);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  cursor: pointer;
+}
+
+.dessert-card:hover {
+  transform: translateY(-6px) scale(1.04);
+  box-shadow: 0 6px 15px rgba(168,127,114,0.3);
+}
+
+.dessert-card img {
+  width: 100%;
+  border-radius: 12px;
+  object-fit: cover;
+  margin-bottom: 16px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+}
+
+footer {
+  text-align: center;
+  padding: 24px 20px;
+  background: #f8e8e1;
+  margin-top: 60px;
+  font-size: 0.9rem;
+  color: #7c5a4d;
+  box-shadow: 0 -1px 4px rgba(0,0,0,0.04);
+}
+
+a {
+  color: #a87f72;          /* приглушённый терракотовый */
+  text-decoration: none;   /* убрать подчёркивание */
+  font-weight: 600;        /* чуть жирнее */
+  transition: color 0.3s ease, border-bottom-color 0.3s ease;
+  border-bottom: 2px solid transparent; /* для аккуратного эффекта при наведении */
+  cursor: pointer;
+}
+
+a:hover,
+a:focus {
+  color: #7c5a4d;          /* чуть темнее при наведении */
+  border-bottom-color: #7c5a4d; /* появится тонкая линия под текстом */
+  outline: none;
+}
+</style>
 <body>
   <header>
     <h1>🍰 Каталог десертов "PAlOMA" для кофеен</h1>
